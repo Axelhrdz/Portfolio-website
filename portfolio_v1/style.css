@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+
+
+
+
+
+
+body {
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: Poppins;
+}
+
+/*Navigation var*/
+.nav{
+    margin: 2% 10%;
+    & h1{
+        cursor: pointer;
+    }
+    & .nav-links{
+        gap: 3rem;
+
+        & span{
+            transition-duration: 0.2s;
+        }
+
+        & span:hover{
+            color: #A8FF69;
+            scale: 95%;
+            cursor: pointer;
+            
+        }
+    }
+}
+
+a:link{
+    text-decoration: none;
+    color: white;
+}
+
+a:visited{
+    text-decoration: none;
+    color: white ;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #A8FF69;
+
+}
+
+/*Heder section*/
+.header{
+    padding: 5em 10%;
+    gap: 4rem;
+
+    & .header-text{
+        width: 1fr;
+        gap: 3em;
+
+        & h1{
+            font-size: 3.5em;
+        }
+
+        & h3{
+            color: #FFF38B;
+        }
+
+        & p{
+            color: #ABABAB;
+        }
+
+        & button, a{
+            width: 300px;
+            height: 60px;
+            background-color: #1bd741;
+            border: none;
+            border-radius: 40px;
+            text-decoration: none;
+            cursor: pointer;
+            
+        }
+    }
+
+    .header-img{
+        & img{
+            width: 25em;
+        }
+    }
+}
+
+/*Recent work section*/
+.Recent-work{
+    margin: 10% 10%;
+    gap: 3em;
+}
+
+.recent-text{
+    & h1{
+        font-size: 3.5rem;
+    }
+}
+
+.github-img{
+    transition-duration: 0.2s;
+}
+
+.github-img:hover{
+    scale: 105%;
+    background-color: #A8FF69;
+    border-radius: 50px;
+    color: black;
+}
+
+/*Social media section*/
+.social-media{
+    margin: 15% 10%;
+}
+
+.social-text{
+    & h1{
+        margin-bottom: 2em;
+        font-size: 3.5em;
+    }
+}
+
+.social-link{
+    gap: 2em;
+
+    & img{
+        transition-duration: 0.2s;
+    }
+
+    & img:hover{
+        scale: 1.1;
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .nav{
+        & h1{
+            font-size: 1rem;
+        }
+
+        & .nav-links{
+            align-items: center;
+            gap: 0.5em;
+            & span{
+            font-size: 0.9rem;
+            }
+        }
+    }
+
+    .header{
+        
+        justify-content: center;
+        align-items: center;
+
+        & .header-img{
+            display: none;
+        }
+
+        & .header-text{
+            & h1{
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+
+    .Recent-work{
+        flex-direction: column-reverse;
+
+        & .recent-text{
+            & h1{
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    .github-img{
+        scale: 80%;
+        & img{
+            scale: 90%;
+        }
+
+    }
+
+    .social-media{
+        & .social-text{
+            & h1{
+                font-size: 2.5rem;
+                text-align: center;
+            }
+        }
+    }
+}
+
+
